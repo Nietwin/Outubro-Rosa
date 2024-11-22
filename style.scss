@@ -18,7 +18,6 @@ header {
   justify-content: space-between;
   padding: 10px 10%;
   box-shadow: 1px 1px 2px gray;
-  text-transform: uppercase;
 }
 
 .header-content {
@@ -56,7 +55,7 @@ main {
 .post {
   display: flex;
   justify-content: space-between;
-  align-items: left;
+  align-items: flex-start; /* Alinhamento de itens para o topo */
   margin: auto;
   font-family: "Noto Sans";
   background-color: #ffd9ec;
@@ -71,13 +70,12 @@ main {
 .imagepost img {
   max-width: 100%;
   height: auto;
-  max-width: 100%;
 }
+
 p {
   font-size: 25px;
   font-family: "noto sans";
   padding: 100px;
-  //weight: 400px;
   margin-top: 0px;
   flex: 1;
   color: black;
@@ -86,16 +84,17 @@ p {
 .post2 {
   display: flex;
   justify-content: space-between;
-  align-items: right;
+  align-items: flex-start; /* Alinhamento de itens para o topo */
   margin: auto;
   background-color: #ff69b4;
   padding: 10px 40px 10px 60px;
 }
+
 .text2 {
   font-size: 25px;
   font-family: "noto sans";
   padding: 80px;
-  weight: 400px;
+  height: 100%;
   margin-top: 0px;
   flex: 1;
   color: #e4eef1;
@@ -139,28 +138,4 @@ p {
   font-size: 20px;
   color: #e4eef1;
   font-family: "noto sans";
-}
-
-.ribbon {
-  width: 100px;
-}
-
-@media (max-width: 768px) {
-  .rodape-container {
-    flex-direction: column;
-    align-items: center;
-    width: 40px;
-  }
-
-  .icons {
-    //margin-bottom: 20px;
-  }
-  .rodape-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .ribbon {
-    margin-top: 0px;
-  }
 }
